@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".OverlayActivity">
+        <activity android:name="cn.yfengtech.overlay.OverlayActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,7 +20,7 @@
         </activity>
 
         <service
-            android:name=".OverlayService"
+            android:name="cn.yfengtech.overlay.OverlayService"
             android:enabled="true"
             android:exported="true">
             <intent-filter>

@@ -1,4 +1,4 @@
-package com.yf.overlay
+package cn.yfengtech.overlay
 
 import android.app.Dialog
 import android.app.Service
@@ -12,10 +12,15 @@ import android.util.Log
 import android.view.*
 import com.google.android.ILauncherOverlay
 import com.google.android.ILauncherOverlayCallback
+import com.yf.overlay.R
 
 private const val TAG = "OverlayService"
 
 /**
+ * 模拟launcher中负一屏设计，提供service，绑定后可以提供负一屏功能，本身独立存在
+ *
+ * 内部UI实际是一个Window，通过宿主window的token，实现共同显示的功能
+ *
  * Created by yf.
  * @date 2019-12-22
  */
@@ -37,7 +42,7 @@ class OverlayService : Service() {
     private val mHandler = Handler(Looper.getMainLooper())
 
 
-    override fun onBind(p0: Intent?): IBinder? {
+    override fun onBind(intent: Intent?): IBinder? {
         return mRemote
     }
 

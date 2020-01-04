@@ -1,4 +1,4 @@
-package com.yf.launcheroverlay.support;
+package cn.yfengtech.launcheroverlay.support;
 
 import android.app.Activity;
 import android.content.BroadcastReceiver;
@@ -8,13 +8,11 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.ServiceConnection;
 import android.graphics.Point;
-import android.net.Uri;
 import android.os.Handler;
 import android.os.IBinder;
 import android.os.Looper;
 import android.os.Message;
 import android.os.PatternMatcher;
-import android.os.Process;
 import android.os.RemoteException;
 import android.util.Log;
 import android.view.Window;

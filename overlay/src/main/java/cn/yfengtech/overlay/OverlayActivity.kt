@@ -1,7 +1,8 @@
-package com.yf.overlay
+package cn.yfengtech.overlay
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.yf.overlay.R
 
 class OverlayActivity : AppCompatActivity() {
 
