@@ -8,7 +8,6 @@ import androidx.fragment.app.FragmentPagerAdapter
 import androidx.viewpager.widget.ViewPager
 import cn.yfengtech.launcheroverlay.support.LauncherClient
 import cn.yfengtech.launcheroverlay.support.LauncherClientCallbacks
-import com.yf.launcheroverlay.R
 import kotlinx.android.synthetic.main.activity_main.*
 
 private const val TAG = "LauncherTag"

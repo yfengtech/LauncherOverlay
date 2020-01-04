@@ -70,7 +70,7 @@ public class LauncherClient {
     }
 
     public LauncherClient(Activity activity, LauncherClientCallbacks callbacks, boolean overlayEnabled) {
-        this(activity, callbacks, "com.yf.overlay", overlayEnabled);
+        this(activity, callbacks, "cn.yfengtech.overlay", overlayEnabled);
     }
 
     private void applyWindowToken() {

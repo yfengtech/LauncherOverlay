@@ -12,7 +12,6 @@ import android.util.Log
 import android.view.*
 import com.google.android.ILauncherOverlay
 import com.google.android.ILauncherOverlayCallback
-import com.yf.overlay.R
 
 private const val TAG = "OverlayService"
 
