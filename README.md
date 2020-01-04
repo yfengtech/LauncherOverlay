@@ -4,6 +4,16 @@
 
 在原有的android launcher中，设计额外的屏幕
 
+## 项目APK及演示
+
+[overlay apk](apk/overlay-debug.apk) : 独立存在的负一屏apk
+
+[launcher apk](apk/launcher-debug.apk) : 模拟launcher apk，如果设备中存在上面`overlay apk`，会绑定Service，实现负一屏功能，滑动即可看到
+
+![](img/launcheroverlay.gif)
+
+演示分为两页，为了模拟滑动，滑动过程中负一屏会覆盖第0页
+
 ## 调研
 
 ![](img/img1.jpg)
@@ -13,7 +23,6 @@
 
 * 与launcher完全解耦，随时可以关闭，可以独立升级，在独立的app中
 * 观察许多app的展示位，UI相同，数据不同，可知是app只提供了数据，套用Overlay中的模板
-
 
 ## 方案
 
